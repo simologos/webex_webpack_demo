@@ -1,0 +1,36 @@
+{
+  "name": "webex-webrtc",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "build:rollup": "rollup -c rollup.config.js",
+    "build:esbuild": "node build.esbuild.js",
+    "start": "webpack serve --open --mode development --config webpack.dev.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cyclonedx/webpack-plugin": "^4.0.1",
+    "html-webpack-plugin": "^5.6.3",
+    "node-polyfill-webpack-plugin": "^3.0.0",
+    "webpack": "^5.89.0",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "@webex/calling": "^3.7.0",
+    "@webex/internal-plugin-device": "^3.7.0",
+    "@webex/internal-plugin-encryption": "^3.7.0",
+    "@webex/internal-plugin-mercury": "^3.7.0",
+    "@webex/internal-plugin-metrics": "^3.7.0",
+    "@webex/internal-plugin-support": "^3.7.0",
+    "@webex/plugin-logger": "^3.7.0",
+    "@webex/webex-core": "^3.7.0"
+  }
+}
