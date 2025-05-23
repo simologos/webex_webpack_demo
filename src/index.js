@@ -32,6 +32,24 @@ const webexConfig = {
 
 // Create the calling configuration
 
+const callingConfig = {
+  clientConfig: {
+    calling: true,
+    contact: true,
+    callHistory: true,
+    callSettings: true,
+    voicemail: true
+  },
+  callingClientConfig: {
+    logger: {
+      level: 'info'
+    }
+  },
+  logger: {
+    level: 'info'
+  }
+};
+
 const Webex = WebexCore.extend({
   webex: true,
 });
